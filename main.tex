@@ -1,0 +1,97 @@
+% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+%	大连理工大学博士论文 XeLaTeX 模版 —— 格式文件 format.tex
+%	版本：0.1beta1
+%	最后更新：2018.5.23
+%	修改者：王天宇 (E-mail: heavenlykingwty@gmail.com)
+%	编译环境：macOS MacTex XeLatex (Texpad)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+ 
+
+
+\documentclass[12pt, a4paper, openany, twoside]{book}
+
+% 字体配置文件
+\input{setup/fonts}
+
+% 宏包配置文件
+\input{setup/packages}
+
+% 格式文件
+\input{setup/format}
+
+\begin{document}
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+
+% 前言
+\frontmatter
+\pagenumbering{Roman}
+\input{preface/cover}       	% 封面
+%\originality              		% 独创性
+\makeabstract
+
+% 设置目录字体和行间距
+\defaultmenufont
+% 目录
+\tableofcontents
+\cleardoublepage
+% 插图目录
+% \listoffigures
+% 表格目录
+% \listoftables
+\cleardoublepage
+
+\defaultfont
+\mainmatter
+% 正文章节
+\defaultfont
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\include{body/chap00}
+\include{body/chap01}
+\include{body/chap02}
+\include{body/chap03}
+
+% 结论
+\include{body/conclusion}
+%\cleardoublepage
+% \backmatter
+
+% 参考文献
+\defaultfont
+\wuhao
+\bibliographystyle{zjugbno}
+\bibliography{body/reference}
+\addcontentsline{toc}{chapter}{参考文献}
+%\cleardoublepage
+% 附录
+\defaultfont
+\begin{appendix}
+  \input{appendix/chapA}
+\end{appendix}
+%\cleardoublepage
+
+\defaultfont
+% 发表的文章列表
+%\include{appendix/publications}
+%\cleardoublepage
+% 致谢
+\include{appendix/acknowledgements}
+%\cleardoublepage
+% 作者简介
+%\include{appendix/about}
+%\cleardoublepage
+% 授权书
+%\chapter*{}
+%\addcontentsline{toc}{chapter}{大连理工大学学位论文版权使用授权书}
+%\renewcommand{\baselinestretch}{1.61}
+%\vspace{-0.48cm}
+%\authorization
+%\cleardoublepage
+
+\end{document}

@@ -1,0 +1,90 @@
+% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+%	大连理工大学博士论文 XeLaTeX 模版 —— 格式文件 format.tex
+%	版本：0.1beta1
+%	最后更新：2018.5.23
+%	修改者：王天宇 (E-mail: heavenlykingwty@gmail.com)
+%	编译环境：macOS MacTex XeLatex (Texpad)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+
+% 页面设置
+\usepackage[body={16.1cm, 22.2cm}]{geometry}
+\usepackage{indentfirst}                         % 首行缩进宏包
+\usepackage[sf]{titlesec}                        % 控制标题的宏包
+\usepackage{titletoc}                            % 控制目录的宏包
+\usepackage{fancyhdr}                            % 自定义页眉页脚
+\usepackage{fancyref}                            % 引用链接属性
+\usepackage[perpage,symbol]{footmisc}            % 脚注控制
+\usepackage{layouts}                             % 打印当前页面格式的宏包
+\usepackage{paralist}                            % 一种换行不缩进的列表格式，asparaenum,inparaenum 等
+\usepackage[shortlabels]{enumitem}               % 列表格式
+\usepackage{fancyvrb}                            % 原样输出
+\usepackage[amsmath,thmmarks,hyperref]{ntheorem} % 定理类环境宏包
+\usepackage{type1cm}                             % 控制字体的大小
+
+% 表格处理
+\usepackage{booktabs}   % 三线表
+\usepackage{multirow}   % 表格多行处理
+\usepackage{diagbox}    % 斜线表头
+\usepackage{tabularx}   % 表格折行
+\usepackage{siunitx}    % 国际单位，小数点对齐
+
+
+% 图形相关
+\usepackage{graphicx}         % 请在引用图片时务必给出后缀名
+\usepackage[x11names]{xcolor} % 支持彩色
+\usepackage[below]{placeins}  % 浮动图形控制宏包
+\usepackage{rotating}	      % 图形和表格的控制
+\usepackage{picinpar}
+\usepackage{setspace}         % 定制表格和图形的多行标题行距
+\usepackage{subfigure}           % 插入子图形
+\usepackage[subfigure]{ccaption} % 插图表格的双语标题
+
+\usepackage{listings}         % 源代码展示
+\lstset{%
+  language=TeX,
+  defaultdialect=empty,
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{LightSteelBlue1},
+  keywordstyle=\color{blue},
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2,breakatwhitespace=false,
+  columns=flexible}
+
+% 其他
+\usepackage{calc}   % 在 tex 文件中具有一些计算功能，主要用在页面控制。
+\usepackage[xetex,
+bookmarksnumbered=true,
+bookmarksopen=true,
+colorlinks=true,
+% pdfborder={0 0 1},
+citecolor=blue,
+linkcolor=black,
+anchorcolor=green,
+urlcolor=magenta,
+breaklinks=true,
+CJKbookmarks=true,
+]{hyperref}
+
+
+\usepackage[numbers,sort&compress,square,super]{natbib} %参考文献
+\usepackage{hypernat}
+\usepackage{bibentry}
+
+
+
+
+
+
+
+
+
+
+
