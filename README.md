@@ -32,7 +32,7 @@
 \setCJKfamilyfont{xhei}{STXihei} 
 \setCJKfamilyfont{xkai}{STXingkaiSC-Bold}
 ```
-后面的字体名称。（此名称为macOS中的字体名称，可以从字体册.app中查看字体名称，例如下图）否则编译回不通过。
+后面的字体名称。（此名称为macOS中的字体名称，可以从字体册.app中查看字体名称，例如下图）否则编译会不通过。
 
 ![1](1.png)
 
