@@ -7,7 +7,8 @@
 仅提供给各位讨厌word排版的LaTex爱好者爽一爽 \^_\^。
 
 ## 目前测试环境
-仅在macOS上使用TexPad调用XeLaTeX编译成功。强烈安利[TexPad](https://www.texpad.com)
+* macOS上使用TexPad调用XeLaTeX编译成功。强烈安利[TexPad](https://www.texpad.com)
+* 理论上macOS上使用MacTex，都可以成功编译
 （欢迎各位汇报编译情况）
 
 ## 主要解决的老模版问题
